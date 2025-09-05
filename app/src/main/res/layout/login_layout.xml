@@ -13,10 +13,18 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="20dp"
+        android:layout_marginTop="60dp"
         android:src="@drawable/logomouse"
         android:scaleType="centerCrop"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mouse"
+        android:fontFamily="@font/fontmouse"
+        android:textSize="35dp"
+        android:layout_gravity="center_horizontal"
+        />
     <com.google.android.material.textfield.TextInputLayout
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
@@ -60,7 +68,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnLogin"
-        style="@style/Widget.Material3.FloatingActionButton.Large.Tertiary"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Surface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -69,5 +77,18 @@
         android:textAllCaps="true"
         android:textSize="20dp"
         app:cornerRadius="15dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCadastrar"
+        android:backgroundTint="#c1c1c1c1"
+        android:layout_width="match_parent"
+        style="but"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:text="Cadastro"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        app:cornerRadius="15dp"/>
 
 </LinearLayout>
