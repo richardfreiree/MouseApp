@@ -5,10 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".LoginActivity"
     android:layout_margin="20dp"
-    >
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
 
     <ImageView
         android:layout_width="150dp"
@@ -18,17 +17,15 @@
         />
 
     <com.google.android.material.textfield.TextInputEditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/edtEmail"
-    android:hint="Insira seu e-mail"
-    />
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira seu e-mail" />
 
     <com.google.android.material.textfield.TextInputEditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/edtSenha"
-    android:hint="Insira sua senha"
-    />
+        android:id="@+id/edtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira sua senha" />
 
 </LinearLayout>
