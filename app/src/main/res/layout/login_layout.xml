@@ -12,11 +12,13 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
         android:src="@drawable/logomouse"
-
-        />
+        android:scaleType="centerCrop"/>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:endIconMode="clear_text"
@@ -31,6 +33,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:endIconMode="password_toggle"
@@ -46,13 +49,25 @@
             />
     </com.google.android.material.textfield.TextInputLayout>
 
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/nhCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não tem cadastro? Clique aqui!"
+        android:layout_gravity="end"/>
+
     <com.google.android.material.button.MaterialButton
-        android:padding="15dp"
-        android:textSize="20dp"
         android:id="@+id/btnLogin"
+        style="@style/Widget.Material3.FloatingActionButton.Large.Tertiary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Entrar" />
+        android:padding="15dp"
+        android:text="Entrar"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        app:cornerRadius="15dp" />
 
 </LinearLayout>
