@@ -16,16 +16,43 @@
 
         />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edtEmail"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Insira seu e-mail" />
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_email">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edtSenha"
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira seu e-mail" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Insira sua senha" />
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_lock">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira sua senha"
+            android:inputType="textPassword"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Entrar" />
 
 </LinearLayout>
