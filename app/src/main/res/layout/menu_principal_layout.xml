@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPrincipalActivity"
+    android:background="#c1c1c1"
+
+    >
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logomouse"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mouse"
+        android:fontFamily="@font/fontmouse"
+        android:textSize="35dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/home"
+        android:id="@+id/card1"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="5dp"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/fundocard"
+            android:scaleType="centerCrop"
+            android:id="@+id/fundocard1"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/home"
+        android:id="@+id/card2"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="5dp"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/fundocard"
+            android:scaleType="centerCrop"
+            android:id="@+id/fundocard2"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/home"
+        android:id="@+id/card3"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="5dp"
+
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/fundocard"
+            android:scaleType="centerCrop"
+            android:id="@+id/fundocard3"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HeadPhone"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:fontFamily="@font/fontmouse"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/city1"
+
+            />
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="Basketball and Art Designs"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:src="@drawable/teclado"
+            android:textSize="25dp"
+            android:layout_margin="10dp"
+            android:layout_alignBottom="@id/fundocard3"
+            />
+</RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>
