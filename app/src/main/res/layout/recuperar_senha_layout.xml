@@ -17,6 +17,7 @@
         android:src="@drawable/logomouse"
         android:scaleType="centerCrop"/>
 
+    
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,6 +25,25 @@
         android:fontFamily="@font/fontmouse"
         android:textSize="35dp"
         android:layout_gravity="center_horizontal"
+        />
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esqueceu a senha?"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redefinir a senha em duas etapas"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
         />
     <com.google.android.material.textfield.TextInputLayout
         android:layout_marginTop="20dp"
