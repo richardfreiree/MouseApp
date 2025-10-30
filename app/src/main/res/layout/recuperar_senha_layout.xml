@@ -13,9 +13,10 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="150dp"
         android:src="@drawable/logomouse"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        />
 
     
     <TextView
@@ -50,7 +51,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:endIconMode="clear_text"
-        app:startIconDrawable="@drawable/baseline_email">
+        app:startIconDrawable="@drawable/baseline_email"
+        android:layout_marginBottom="100dp"
+        >
 
 
 
@@ -58,36 +61,20 @@
             android:id="@+id/edtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Insira sua nova senha"
-            android:inputType="textPassword"
+            android:hint="Digite seu Email"
 
             />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:endIconMode="password_toggle"
-        app:startIconDrawable="@drawable/baseline_lock">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtSenhaConfimarcao"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Confirme sua senha"
-            android:inputType="textPassword"
-
-            />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
 
 
     <com.google.android.material.button.MaterialButton
+
         android:id="@+id/btnCadastrar"
-        android:layout_width="match_parent"
+
         style="@style/Widget.Material3.ExtendedFloatingActionButton.Surface"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -95,6 +82,9 @@
         android:text="Recuperar"
         android:textAllCaps="true"
         android:textSize="20dp"
-        app:cornerRadius="15dp"/>
+        app:cornerRadius="15dp"
+        android:layout_width="200dp"
+        android:layout_gravity="center_horizontal"
+        />
 
 </LinearLayout>
