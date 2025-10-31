@@ -9,11 +9,29 @@
     android:orientation="vertical"
     tools:context=".RecuperarSenhaActivity">
 
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/btnVoltar"
+
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Surface"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:padding="15dp"
+        android:text="Voltar"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        app:cornerRadius="5dp"
+        android:layout_width="150dp"
+        android:layout_marginLeft="30dp"
+
+        />
+
+
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:src="@drawable/logomouse"
         android:scaleType="centerCrop"
         />
@@ -46,8 +64,15 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="20dp"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qual é seu e-mail de cadastro?"
+        android:textColor="#484848" />
+
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_marginTop="20dp"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:endIconMode="clear_text"
