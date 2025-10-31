@@ -75,7 +75,7 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="500dp"
+        android:layout_height="450dp"
         android:layout_margin="10dp"
         >
 
@@ -96,6 +96,16 @@
                     android:src="@drawable/componentes"
                     android:scaleType="centerCrop"
                     />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Componentes"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/fontmenumain"
+                    />
+
 
 
             </RelativeLayout>
