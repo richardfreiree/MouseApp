@@ -10,25 +10,23 @@
 
     >
 
-<LinearLayout
+<RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:layout_height="50dp"
     android:layout_marginTop="30dp"
     >
 
     <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:width="150dp"
         android:text="Voltar"
-
-        android:layout_marginBottom="5dp"
+        android:id="@+id/btnVoltar"
         style="@style/Widget.Material3.Button.OutlinedButton"
         app:icon="@drawable/baseline_arrow_back"
-        margin android:layout_marginRight="20dp"
+        android:layout_marginRight="140dp"
         android:layout_marginLeft="20dp"
         android:textColor="#cccc"
         app:cornerRadius="2dp"
@@ -41,19 +39,34 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Mouse"
+        android:fontFamily="@font/fontmouse"
+        android:textColor="#ffff"
+        android:textSize="40dp"
+        android:id="@+id/textLogo"
 
         />
     <ImageView
 
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="60dp"
         android:src="@drawable/logomouse"
         android:scaleType="centerCrop"
+        android:id="@+id/imgLogo"
         />
 
 
-</LinearLayout>
+</RelativeLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Principal"
+        android:textColor="#ffff"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/fontmenumain"
+        />
 </LinearLayout>
