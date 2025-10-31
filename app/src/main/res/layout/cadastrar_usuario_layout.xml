@@ -10,7 +10,22 @@
     tools:context=".CadastrarUsuarioActivity">
 
 
+    <com.google.android.material.button.MaterialButton
 
+        android:id="@+id/btnVoltar"
+
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Surface"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:padding="15dp"
+        android:text="Voltar"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        app:cornerRadius="5dp"
+
+        />
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -26,6 +41,7 @@
         android:fontFamily="@font/fontmouse"
         android:textSize="35dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="70dp"
         />
     <com.google.android.material.textfield.TextInputLayout
         android:layout_marginTop="20dp"

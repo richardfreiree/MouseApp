@@ -1,10 +1,433 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ComponentesActivity">
+    tools:context=".MenuPrincipalActivity"
+    android:background="#484848"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    >
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:width="150dp"
+        android:text="Voltar"
+
+        android:layout_marginBottom="5dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        app:icon="@drawable/baseline_arrow_back"
+        android:layout_margin="20dp"
+        android:textColor="#cccc"
+        app:cornerRadius="2dp"
+        android:textColorHint="#2A2929"
+        app:strokeWidth="2dp"
+        app:strokeColor="#2A2929"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Componentes"
+        android:textSize="30dp"
+        android:textColor="#ffff"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/fontmenumain"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/home"
+        android:id="@+id/card1"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        app:strokeColor="#66090808"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#09010F"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fundocard2"
+                android:scaleType="centerCrop"
+                android:id="@+id/fundocard1"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mouse"
+                android:textColor="#cccc"
+                android:textStyle="bold"
+                android:fontFamily="@font/fontmouse"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:id="@+id/texttop1"
+
+                />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:src="@drawable/mouse"
+                android:textSize="25dp"
+                android:layout_margin="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mouse Logitech"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:fontFamily="@font/fontmenumain"
+                android:textSize="30dp"
+                android:id="@+id/text1"
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/text1"
+                android:layout_centerInParent="true"
+                android:text="R$522,99"
+                android:textColor="#ffff"
+                android:fontFamily="@font/fontmenumain"
+                android:textSize="26dp"
+                android:layout_margin="10dp"
+                android:id="@+id/preço1"
+
+                />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:width="150dp"
+                android:text="Comprar"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                style="@style/Widget.Material3.FloatingActionButton.Large.Surface"
+                android:textColor="#cccc"
+                app:cornerRadius="2dp"
+
+                />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/home"
+        android:id="@+id/card2"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        app:strokeColor="#66090808"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fundocard2"
+                android:scaleType="centerCrop"
+                android:id="@+id/fundocard2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HeadPhone"
+                android:textColor="#cccc"
+                android:textStyle="bold"
+                android:fontFamily="@font/fontmouse"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:id="@+id/texttop2"
+
+                />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:text="Basketball and Art Designs"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:scaleType="centerCrop"
+                android:src="@drawable/teclado"
+                android:textSize="25dp"
+                android:layout_margin="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teclado Ryzer"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:fontFamily="@font/fontmenumain"
+                android:textSize="30dp"
+                android:id="@+id/text2"
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/text2"
+                android:layout_centerInParent="true"
+                android:text="R$332,50"
+                android:textColor="#ffff"
+                android:fontFamily="@font/fontmenumain"
+                android:textSize="26dp"
+                android:layout_margin="10dp"
+                android:id="@+id/preço2"
+
+                />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:width="150dp"
+                android:text="Comprar"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                style="@style/Widget.Material3.FloatingActionButton.Large.Surface"
+                android:textColor="#cccc"
+                app:cornerRadius="2dp"
+                />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/home"
+        android:id="@+id/card3"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        app:strokeColor="#66090808"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#09010F"
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fundocard2"
+                android:scaleType="centerCrop"
+                android:id="@+id/fundocard3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HeadPhone"
+                android:textColor="#cccc"
+                android:textStyle="bold"
+                android:fontFamily="@font/fontmouse"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:id="@+id/city1"
+
+                />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:text="Basketball and Art Designs"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:scaleType="centerCrop"
+                android:src="@drawable/teclado"
+                android:textSize="25dp"
+                android:layout_margin="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teclado Ryzer"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:fontFamily="@font/fontmenumain"
+                android:textSize="30dp"
+                android:id="@+id/text3"
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/text3"
+                android:layout_centerInParent="true"
+                android:text="R$332,50"
+                android:textColor="#ffff"
+                android:fontFamily="@font/fontmenumain"
+                android:textSize="26dp"
+                android:layout_margin="10dp"
+                android:id="@+id/preço3"
+
+                />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:width="150dp"
+                android:text="Comprar"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                style="@style/Widget.Material3.FloatingActionButton.Large.Surface"
+                android:textColor="#cccc"
+                app:cornerRadius="2dp"
+                />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/home"
+        android:id="@+id/card4"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        app:strokeColor="#66090808"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#09010F"
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fundocard2"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HeadPhone"
+                android:textColor="#cccc"
+                android:textStyle="bold"
+                android:fontFamily="@font/fontmouse"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+
+
+                />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:text="Basketball and Art Designs"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:scaleType="centerCrop"
+                android:src="@drawable/teclado"
+                android:textSize="25dp"
+                android:layout_margin="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teclado Ryzer"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:fontFamily="@font/fontmenumain"
+                android:textSize="30dp"
+                android:id="@+id/text4"
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/text4"
+                android:layout_centerInParent="true"
+                android:text="R$332,50"
+                android:textColor="#ffff"
+                android:fontFamily="@font/fontmenumain"
+                android:textSize="26dp"
+                android:layout_margin="10dp"
+                android:id="@+id/preço4"
+
+                />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:width="150dp"
+                android:text="Comprar"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                style="@style/Widget.Material3.FloatingActionButton.Large.Surface"
+                android:textColor="#cccc"
+                app:cornerRadius="2dp"
+                />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>
