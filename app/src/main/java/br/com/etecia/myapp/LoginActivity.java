@@ -51,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
                 senha = edtSenha.getText().toString();
 
                 if (email.equals("etecia") && senha.equals(12345)) {
-                    finish();
+                    startActivity(new Intent(getApplicationContext(), MenuPrincipalActivity.class));
                 } else {
                     Toast.makeText(getApplicationContext(), "Usuário ou senha incorreto", Toast.LENGTH_SHORT).show();
                 }
