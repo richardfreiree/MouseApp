@@ -15,7 +15,7 @@ import com.google.android.material.button.MaterialButton;
 public class CadastrarUsuarioActivity extends AppCompatActivity {
 
 
-     MaterialButton btnCadastrar;
+     MaterialButton btnCadastrar, btnVoltar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,11 +28,20 @@ public class CadastrarUsuarioActivity extends AppCompatActivity {
         });
 
         btnCadastrar = findViewById(R.id.btnCadastrar);
+        btnVoltar = findViewById(R.id.btnVoltar);
+        btnVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            }
+        });
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplication(), CadastrarUsuarioActivity.class));
-            }
+                startActivity(new Intent(getApplication(), LoginActivity.class));
+
+            };
         });
+
     }
 }
