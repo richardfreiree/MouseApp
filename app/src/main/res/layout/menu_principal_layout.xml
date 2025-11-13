@@ -75,13 +75,13 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="450dp"
+        android:layout_height="550dp"
         android:layout_margin="10dp"
         >
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_height="230dp"
             android:id="@+id/card1"
             app:strokeColor="#66090808"
             >
@@ -114,22 +114,36 @@
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_height="230dp"
             android:id="@+id/card2"
             android:layout_alignParentEnd="true"
             >
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/games"
+                    android:scaleType="centerCrop"
+                    />
 
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Games"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/fontmenumain"
+                    />
             </RelativeLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_height="230dp"
             android:id="@+id/card3"
             android:layout_alignParentBottom="true"
 
@@ -145,7 +159,7 @@
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_height="230dp"
             android:id="@+id/card4"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
