@@ -5,9 +5,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-public class VPAdapterTeclado extends FragmentStateAdapter {
+public class VPAdapterComponentes extends FragmentStateAdapter {
 
-    public VPAdapterTeclado(@NonNull FragmentActivity fragmentActivity) {
+    public VPAdapterComponentes(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
     }
 
@@ -17,6 +17,7 @@ public class VPAdapterTeclado extends FragmentStateAdapter {
          switch(position){
              case 0: return new TecladoFragment();
              case 1: return new MouseFragment();
+             default: return new TecladoFragment();
          }
     }
 
