@@ -3,6 +3,7 @@ package br.com.etecia.myapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -19,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
 
     MaterialButton btnCadastrar, btnEntrar;
     TextInputEditText edtEmail, edtSenha;
-
+    TextView txtSenha;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +43,14 @@ public class LoginActivity extends AppCompatActivity {
         btnEntrar = findViewById(R.id.btnLogin);
         edtEmail = findViewById(R.id.edtEmail);
         edtSenha = findViewById(R.id.edtSenha);
+        txtSenha = findViewById(R.id.txtSenha);
 
+        txtSenha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), RecuperarSenhaActivity.class));
+            }
+        });
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                 email = edtEmail.getText().toString();
                 senha = edtSenha.getText().toString();
 
-                if (email.equals("etecia") && senha.equals(12345)) {
+                if (email.equals("etecia") && senha.equals("12345")) {
                     startActivity(new Intent(getApplicationContext(), MenuPrincipalActivity.class));
                 } else {
                     Toast.makeText(getApplicationContext(), "Usuário ou senha incorreto", Toast.LENGTH_SHORT).show();

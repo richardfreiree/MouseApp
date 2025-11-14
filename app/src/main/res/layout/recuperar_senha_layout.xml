@@ -98,7 +98,7 @@
 
     <com.google.android.material.button.MaterialButton
 
-        android:id="@+id/btnCadastrar"
+        android:id="@+id/btnRecuperar"
 
         style="@style/Widget.Material3.ExtendedFloatingActionButton.Surface"
         android:layout_height="wrap_content"

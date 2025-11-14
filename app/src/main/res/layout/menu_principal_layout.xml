@@ -22,7 +22,7 @@
 
         android:width="150dp"
         android:text="Sair"
-        android:id="@+id/btnVoltar"
+        android:id="@+id/btnSair"
         style="@style/Widget.Material3.Button.OutlinedButton"
 
 
