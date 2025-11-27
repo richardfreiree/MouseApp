@@ -1,26 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="300dp"
+    android:layout_width="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cardComponentes"
     android:layout_height="150dp"
     android:layout_gravity="center_horizontal"
     android:layout_margin="20dp"
-    >
-    <ImageView
+    app:cardCornerRadius="20dp">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/teclado"
-        android:id="@+id/imgCardTeclado"
+        android:layout_height="match_parent">
 
-        />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/teclado"
+            android:id="@+id/imgCardTeclado"
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Teclado Ryzer"
-        android:id="@+id/txtCardTeclado"
-        android:textSize="20dp"
-        android:textStyle="bold"/>
+            />
 
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="Teclado Ryzer"
+            android:id="@+id/txtCardTeclado"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="200 Reais"
+                android:layout_alignBottom="@id/imgCardTeclado"
+                android:layout_alignEnd="@id/imgCardTeclado"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:id="@+id/txtCardPreço"
+                />
+
+
+    </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
